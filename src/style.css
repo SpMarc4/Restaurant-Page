@@ -1,0 +1,8 @@
+#content img{
+    content: url("./images/cartas-de-kebab.jpg");
+    background-size: cover;
+    width: 400px;
+    height: auto ;
+    background-position: center;
+    background-color: yellowgreen;
+}

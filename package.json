@@ -1,0 +1,31 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "The best restaurant in the world",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "markdownlint-cli2",
+    "fix": "markdownlint-cli2 --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SpMarc4/Restaurant-Page.git"
+  },
+  "author": "M.San",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/SpMarc4/Restaurant-Page/issues"
+  },
+  "homepage": "https://github.com/SpMarc4/Restaurant-Page#readme",
+  "devDependencies": {
+    "css-loader": "^7.1.4",
+    "html-webpack-plugin": "^5.6.7",
+    "markdownlint-cli2": "^0.22.1",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.107.2",
+    "webpack-cli": "^7.0.3",
+    "webpack-dev-server": "^5.2.5"
+  }
+}
