@@ -13,10 +13,10 @@ export class BasePage {
         }
         else {
             throw new Error(
-                "Only the following types are accepted:",
-                "- p",
-                "- header, h1, h2, h3, h4, h5, h6",
-            )
+-                "Only the following types are accepted:\
+-                - p\
+-                - header, h1, h2, h3, h4, h5, h6"
+            );
         };
 
         return element;
