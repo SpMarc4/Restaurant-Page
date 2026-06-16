@@ -8,9 +8,9 @@ class AboutPage extends BasePage {
     }
 
     aboutDisplay() {
-        this.setTitle();
         const contentElement = this.getDOMElement("#content");
         contentElement.innerHTML = "";
+        this.setTitle();
         const name = this.createTextElement(
             'p',
             'name',
@@ -27,9 +27,9 @@ class AboutPage extends BasePage {
             'Address: C/123 Barcelona'
         );
 
-        this.appendElementToDOM(content, name);
-        this.appendElementToDOM(content, mail);
-        this.appendElementToDOM(content, address);
+        this.appendElementToDOM(contentElement, name);
+        this.appendElementToDOM(contentElement, mail);
+        this.appendElementToDOM(contentElement, address);
     }
 }
 

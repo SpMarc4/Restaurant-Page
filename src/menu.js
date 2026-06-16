@@ -10,14 +10,9 @@ class MenuPage extends BasePage {
     }
 
     MenuDisplay() {
-        this.setTitle();
         const contentElement = this.getDOMElement("#content");
         contentElement.innerHTML = "";
-        const h1Home = this.createTextElement(
-            "h1",
-            "menu-header",
-            "Menu"
-        );
+        this.setTitle();
         const h2Home = this.createTextElement(
             "h2",
             "menu-subheader",
@@ -34,7 +29,6 @@ class MenuPage extends BasePage {
             of our products."
         );
 
-        this.appendElementToDOM(contentElement, h1Home);
         this.appendElementToDOM(contentElement, h2Home);
         this.appendElementToDOM(contentElement, imgHome);
         this.appendElementToDOM(contentElement, pHome);

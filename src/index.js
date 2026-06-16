@@ -5,12 +5,11 @@ import { exportAbout } from "./about.js";
 
 console.log("¡Funcionando!")
 
-const HOMEBUTTON = document.getElementById('home-btn');
-const MENUBUTTON = document.getElementById('menu-btn');
-const ABOUTBUTTON = document.getElementById('about-btn');
-
-
 function entryPointExecution() {
+    const HOMEBUTTON = document.getElementById('home-btn');
+    const MENUBUTTON = document.getElementById('menu-btn');
+    const ABOUTBUTTON = document.getElementById('about-btn');
+
     exportHome();
 
     HOMEBUTTON.addEventListener("click", () => {
@@ -26,4 +25,4 @@ function entryPointExecution() {
     })
 };
 
-entryPointExecution();
+addEventListener("DOMContentLoaded", entryPointExecution);

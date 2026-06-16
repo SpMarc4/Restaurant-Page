@@ -40,7 +40,7 @@ export class BasePage {
     }
     
     setTitle() {
-        const titleElement = this.createTextElement('header',
+        const titleElement = this.createTextElement('h1',
             'title',
             this.title
         );

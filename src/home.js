@@ -10,9 +10,9 @@ class HomePage extends BasePage {
     }
 
     homeDisplay() {
-        this.setTitle();
         const contentElement = this.getDOMElement("#content");
         contentElement.innerHTML = "";
+        this.setTitle();
         const h1Home = this.createTextElement(
             "h1",
             "home-header",
