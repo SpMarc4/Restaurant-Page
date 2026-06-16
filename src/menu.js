@@ -1,37 +1,37 @@
 import { BasePage } from "./base.js";
-import Durum from "./images/durum.jpg";
+import MenuImg from "./images/cartas-de-kebab.jpg";
 
-class HomePage extends BasePage {
+class MenuPage extends BasePage {
     
-    title = "Home";
+    title = "Menu";
 
     constructor() {
-        super(HomePage.title);
+        super(MenuPage.title);
     }
 
-    homeDisplay() {
+    MenuDisplay() {
         this.setTitle();
         const contentElement = this.getDOMElement("#content");
         contentElement.innerHTML = "";
         const h1Home = this.createTextElement(
             "h1",
-            "home-header",
-            "Sultan Kebab"
+            "menu-header",
+            "Menu"
         );
         const h2Home = this.createTextElement(
             "h2",
-            "home-subheader",
-            "The best kebab in the world"
+            "menu-subheader",
+            "Here are our tasty dishes"
         );
         const imgHome = this.createImgElement(
             "menu-img",
-            Durum
+            MenuImg
         );
         const pHome = this.createTextElement(
             "p",
             "home-p",
-            "Discover our delicious durum, \
-            pita, falafel, pizza and more"
+            "All the sundays 2x1 in all, \
+            of our products."
         );
 
         this.appendElementToDOM(contentElement, h1Home);
@@ -41,7 +41,7 @@ class HomePage extends BasePage {
     }
 }
 
-export function exportHome() {
-    const homePage = new HomePage();
-    homePage.homeDisplay();
+export function exportMenu() {
+    const menuPage = new MenuPage();
+    menuPage.MenuDisplay();
 }
