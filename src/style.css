@@ -1,6 +1,49 @@
-#content img{
-    width: 400px;
-    height: auto ;
-    background-position: center;
+* {
+    font-family: 'Roboto';
+}
+
+header {
+    display: flex;
+}
+
+.navigation{
+    display: flex;
+    margin: auto;
+    gap: 20px;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
     background-color: yellowgreen;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+
+#content img{
+    flex: 1;
+    max-width: 400px;
+    height: auto ;
+    background-color: yellowgreen;
+}
+
+
+h1,
+h2 {
+    text-align: center;
+}
+
+button {
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: yellowgreen;
+}
+
+button:hover {
+    cursor: pointer;
 }

@@ -3,6 +3,8 @@ import { exportHome } from "./home.js";
 import { exportMenu } from "./menu.js";
 import { exportAbout } from "./about.js";
 
+console.log("¡Funcionando!")
+
 const HOMEBUTTON = document.getElementById('home-btn');
 const MENUBUTTON = document.getElementById('menu-btn');
 const ABOUTBUTTON = document.getElementById('about-btn');
